@@ -1,4 +1,4 @@
-# create a function to house all the other functions and import the other files
+# -*- coding: utf-8 -*-
 # import the other files
 from type_input import find_types
 

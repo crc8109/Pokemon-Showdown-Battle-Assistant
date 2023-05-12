@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Determine the opponent's type(s) and return them to the main function
 def find_types():
     # List of all acceptable types to be checked against the user's input:
