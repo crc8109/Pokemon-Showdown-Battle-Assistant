@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # import the other files
 from type_input import find_types
+from offense_calculator import offense_calculator
+from defense_calculator import defense_calculator
 
 # create a function to house all the other functions
 def main():
@@ -15,8 +17,13 @@ def main():
     # Call function to determine the opponent's type(s):
     opponent_type1, opponent_type2 = find_types()
 
-    # # Call function to determine opponent's offensive multipliers by type:
-    # offense_calculator(opponent_type1, opponent_type2)
+    # Call function to determine opponent's offensive multipliers by type:
+    offensive_analysis = offense_calculator(opponent_type1, opponent_type2)
+    print(offensive_analysis)
+
+    # Call function to determine opponent's defensive multipliers by type:
+    defensive_analysis = defense_calculator(opponent_type1, opponent_type2)
+    print(defensive_analysis)
 
     # # Call function to determine opponent's defensive multipliers by type:
     # defense_calculator(opponent_type1, opponent_type2)
