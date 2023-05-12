@@ -1,5 +1,6 @@
-# Determine the opponent's type(s) and return them to the main function
 def find_types():
+    """This function determines the opponent's type(s) and return them to the main function"""
+    
     # List of all acceptable types to be checked against the user's input:
     acceptable_types = ["normal", "fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground",
                         "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy"]
@@ -25,6 +26,7 @@ def find_types():
         else:
             print(f"\nHere is a list of all acceptable types: {acceptable_types}")
             print(f"\nYou entered: {opponent_type2}")
+            
             # Double check that the user didn't enter the same type as the first type:
             if opponent_type2 == opponent_type1:
                 print("\nYou entered the same type as the first type.") 

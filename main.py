@@ -15,8 +15,11 @@ def main():
     # Call function to determine the opponent's type(s):
     opponent_type1, opponent_type2 = find_types()
 
-    # Test that everything works by printing the opponent types below:
-    print(opponent_type1, opponent_type2)
+    # # Call function to determine opponent's offensive multipliers by type:
+    # offense_calculator(opponent_type1, opponent_type2)
+
+    # # Call function to determine opponent's defensive multipliers by type:
+    # defense_calculator(opponent_type1, opponent_type2)
 
     return
 
