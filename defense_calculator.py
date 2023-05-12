@@ -1,4 +1,4 @@
-def offense_calculator():
+def offense_calculator(opponent_type1, opponent_type2):
     """This function will calculate the offensive multiplier for opponent Pokemon's type(s)"""
     # Dictionary for the defensive multipliers for each of the types:
     defense_multiplier_dict = {
