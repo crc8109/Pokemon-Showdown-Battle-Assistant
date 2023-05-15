@@ -107,6 +107,12 @@ def offense_calculator(opponent_type1, opponent_type2):
         }
     }
 
+    # This is the result of each type's offensive analysis (i.e its multiplier against each type)
+    # It's a dictionary who's keys are multipiers (e.g. 2, 0.5, 0) 
+    # and who's values are lists of types (e.g. ["grass", "ice", "bug", "steel"]
+    battle_analysis = {}
+
+
     
     offense_analysis = {}
 
