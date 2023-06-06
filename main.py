@@ -17,17 +17,11 @@ def main():
     # Call function to determine the opponent's type(s):
     opponent_type1, opponent_type2 = find_types()
 
-    # Call function to determine opponent's offensive multipliers by type:
+    # Call function to determine opponent's offensive multipliers for each type:
     offensive_analysis = offense_calculator(opponent_type1, opponent_type2)
     print(offensive_analysis)
 
-    # Call function to determine opponent's defensive multipliers by type:
-    defensive_analysis = defense_calculator(opponent_type1, opponent_type2)
-    print(defensive_analysis)
-
-    # # Call function to determine opponent's defensive multipliers by type:
-    # defense_calculator(opponent_type1, opponent_type2)
-
+    
     return
 
 
