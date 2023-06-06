@@ -107,46 +107,22 @@ def offense_calculator(opponent_type1, opponent_type2):
         }
     }
 
-    # This is the result of each type's offensive analysis (i.e its multiplier against each type)
-    # It's a dictionary who's keys are multipiers (e.g. 2, 0.5, 0) 
-    # and who's values are lists of types (e.g. ["grass", "ice", "bug", "steel"]
-    battle_analysis = {}
+    
+    offense_analysis = {}
 
+    # Look up opponent types in offense_multiplier_dict
+    # and populate offense_analysis with its values
+    offense_analysis[opponent_type1] = offense_multiplier_dict[opponent_type1]
+    if opponent_type2 != "none":
+        offense_analysis[opponent_type2] = offense_multiplier_dict[opponent_type2]
 
     
-
-
-    # This is the logic that will be used to fill out the temporary data structure for each type in opponent_types:
-    for type in opponent_types:
-
-        print(f"\nPrinting current type: {type}")
-
-        # create a variable called "multiplier" 
-        # it is just the current key in battle_analysis:
-        for type in range(0, len(offense_multiplier_dict))
-        # print current multiplier:
-        print(f"Printing current multiplier: {multiplier}")
+    # Print offense_analysis in a clean format
+    print("\nHere's the offensive analysis...")
+    for type in offense_analysis:
+        print(f"\n{type}:")
+        for type2 in offense_analysis[type]:
+            print(str(type2) + ": " + str(offense_analysis[type][type2]))
         
-
-        
-        # Look up the type in the dictionary
-        # variable called "multiplier" will equal each key in the dictionary
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-       
-        print(battle_analysis)
-
-        return
+    
+    return offense_analysis
